@@ -1,9 +1,14 @@
-main p {
-    color: blue;
-    font-family: Arial;
-    font-style: italic;
-}
 h1 {
     color: red;
-    font-size: 30pt;
+    font-size: 25pt;
+}
+    main p {
+    color: blue;
+    font-family: Arial;
+    font-size: 14pt;
+}
+
+main ol {
+    color: purple;
+    font-family: Arial;
 }
