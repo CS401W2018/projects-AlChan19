@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+footer p{
+    color:blueviolet;
+}
+
+#firstpar{
+    color:aquamarine;
+}
+
+.blue {
+    color:blue;
+}
+
+.bigger {
+    font-size: 15pt;
+}
+
+.red {
+    color:red;
+}
+
+.green {
+    color:green;
+}
+
+.orange {
+    color:orange;
+}
