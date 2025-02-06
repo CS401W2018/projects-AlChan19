@@ -30,6 +30,7 @@ a:hover {
 
 .underline {
     text-decoration: underline;
+    display: inline;  
 }
 
 main {
