@@ -28,6 +28,10 @@ a:hover {
     color: #e67e22;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 main {
     margin: auto;
     padding: 45px;
