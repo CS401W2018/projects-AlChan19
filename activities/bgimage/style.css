@@ -1,8 +1,19 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("bluebg.jpg");
+    background-image: url('bluebg.jpg'); 
+    /* #3325DD; */
+    background-color: blue; 
+}
+
+.mylist {
+    list-style-type: none;
+    list-style-image: url('mark.png')
 }
 
 header {
-    
+    color: white;
+    background: url('wave.png') top right no-repeat;
+    /* background-image: url('wave.png'); */
+    /* background-repeat: no-repeat;
+    background-position: top right; */
 }
