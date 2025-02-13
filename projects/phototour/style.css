@@ -7,7 +7,7 @@ body {
 }
 
 body.homepage {
-    background: url('bgimage.jpeg') repeat;
+    background: url('bgimage.png') repeat;
 }
 
 body.homepage::before {
@@ -55,7 +55,7 @@ main {
     color: #333;
     text-shadow: 2px 2px 2px white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .placeslist {
