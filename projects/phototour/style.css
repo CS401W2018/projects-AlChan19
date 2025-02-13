@@ -17,7 +17,7 @@ header {
 
 .homepage::before {
     content: "";
-    background: url('phflag.jpg') no-repeat top right;
+    background: url('phflag.png') no-repeat top right;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -28,7 +28,7 @@ header {
 nav {
     text-align: center;
     padding: 10px;
-    background: #FFCC00; 
+    background: #fcd116; 
     position: relative;
 }
 
