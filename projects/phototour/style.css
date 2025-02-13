@@ -9,13 +9,13 @@ body {
 
 header {
     text-align: center;
-    background: #0033A0; 
+    background: #00468c; 
     color: white;
     padding: 20px 0;
     text-shadow: 2px 2px 4px black;
 }
 
-body::before {
+.homepage::before {
     content: "";
     background: url('phflag.jpg') no-repeat top right;
     position: absolute;
@@ -23,24 +23,24 @@ body::before {
     bottom: 0;
     right: 0;
     left: 0;
-
 }
 
 nav {
     text-align: center;
     padding: 10px;
     background: #FFCC00; 
+    position: relative;
 }
 
 nav a, .underline {
     text-decoration: none;
     font-weight: bold;
-    color: #0033A0; 
+    color: #00468c; 
 }
 
 .underline {
     text-decoration: underline;
-    color: red;
+    color: #ce1127;
 }
 
 main {
@@ -57,15 +57,15 @@ main {
 .paragraph {
     max-width: 700px;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 3.0;
 }
 
 footer {
     text-align: center;
-    background: #0033A0;
+    background: #00468c;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-shadow: none;
+    text-shadow: none
 }
