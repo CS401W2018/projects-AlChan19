@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.parent {
+    background-color: rgb(172, 232, 212);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    gap: 5px;
+}
+
+.child {
+    background-color: rgb(182, 143, 228);
+}
