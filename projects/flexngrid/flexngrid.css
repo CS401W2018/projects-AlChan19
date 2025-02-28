@@ -44,19 +44,18 @@ nav a:hover {
 }
 
 aside {
+    text-align: justify;
     width: 16%;
     background-color: #fefae0;
     padding: 20px;
 }
 
-aside h2 {
-    color: black;
-}
-
 main {
     text-align: center;
     width: 80%;
-    padding: 20px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
 .profile-cards {
