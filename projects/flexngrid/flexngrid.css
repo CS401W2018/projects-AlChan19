@@ -54,6 +54,7 @@ aside h2 {
 }
 
 main {
+    text-align: center;
     width: 80%;
     padding: 20px;
 }
