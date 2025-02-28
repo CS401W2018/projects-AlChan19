@@ -113,7 +113,8 @@ footer {
 }
 
 .footer-links a:hover {
-    background-color: #cbc0d3;
+    color: #424242;
+    background-color: whitesmoke;
 }
 
 .copyright {
