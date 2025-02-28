@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: #ccd5ae;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     padding: 50px;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
@@ -35,7 +35,7 @@ nav a {
 
 nav a:hover {
     background-color: #ccd5ae;
-    color: white;
+    color: whitesmoke;
     border-radius: 5px;
 }
 
@@ -66,7 +66,7 @@ main {
 }
 
 .card {
-    background-color: white;
+    background-color: whitesmoke;
     padding: 15px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -91,7 +91,7 @@ main {
 
 footer {
     background-color: #d4a373;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     padding: 20px;
 }
@@ -104,7 +104,7 @@ footer {
 }
 
 .footer-links a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     display: block;
     background-color: #424242;
