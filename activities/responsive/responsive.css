@@ -49,3 +49,26 @@ nav a:hover {
 .card img {
     width: 100%;
 }
+
+
+@media ONLY screen AND (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media ONLY screen AND (max-width: 900px) {
+    .card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feeature {
+        order: -1;
+    }
+}
