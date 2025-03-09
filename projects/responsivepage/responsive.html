@@ -4,46 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Page</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
     <div id="wrapper">
-        <header>Haddock Family</header>
+        <header>
+            <h1>Forger Family</h1>
+        </header>
         <nav>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">History</a>
+            <a href="#">Contact</a>
         </nav>
         <div class="container">
             <aside>
-                <h2>Our Candles</h2>
-                <p>Discover the calming and refreshing scents of our handmade candles. Perfect for relaxation and ambiance.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Dictum arcu aptent cursus nunc turpis urna lectus mus. Varius tortor luctus sollicitudin aenean lacinia auctor gravida duis! Amet tellus erat et potenti blandit porta quam. Hac dui iaculis felis ipsum, purus malesuada mus sapien. Curae faucibus pretium natoque leo penatibus risus maecenas; congue torquent. Egestas placerat mollis vel est ex dictum. Venenatis curae pellentesque facilisi vehicula ipsum ut ornare montes. Pharetra morbi laoreet diam per nam feugiat bibendum.</p>
+                <h2>Forger Family</h2>
+                <figure class="family">
+                    <img src="forger.jpeg" alt="Forger Family">
+                    <figcaption>Forger Family<br>&copy; MyAnimeList</figcaption>
+                </figure>
+                <h3>Interesting Facts:</h3>
+                <ul>
+                    <li>The Forger family is not a real family but they pretend to be one.</li>
+                    <li>Loid is a spy known as "Twilight."</li>
+                    <li>Yor is an assassin known as the "Thorn Princess."</li>
+                    <li>Anya can read minds.</li>
+                    <li>Bond can see the future.</li>
+                </ul>
             </aside>
             <main>
-                <h2>Meet the family members</h2>
+                <h2>Meet the Family Members</h2>
                 <div class="profile-cards">
-                    <div class="card">
-                        <img src="stoick.png" alt="Lavender Bliss">
-                        <h3>Lavender Bliss</h3>
-                        <p>A soothing blend of lavender and vanilla.</p>
-                    </div>
-                    <div class="card">
-                        <img src="valka.png" alt="Ocean Breeze">
-                        <h3>Ocean Breeze</h3>
-                        <p>Refreshing scent inspired by the sea.</p>
-                    </div>
-                    <div class="card">
-                        <img src="hiccup.png" alt="Rose Petals">
-                        <h3>Rose Petals</h3>
-                        <p>Romantic aroma of freshly picked roses.</p>
-                    </div>
+                    <article class="card"> 
+                        <img src="loid.jpg" alt="Loid Forger">
+                        <h3>Loid Forger</h3>
+                        <p>A skilled spy who created a fake family for a top-secret mission. He quickly grew attached to his new family. He balanced his mission with his newfound love for them.</p>
+                    </article>
+                    <article class="card">
+                        <img src="yor.jpg" alt="Yor Forger">
+                        <h3>Yor Forger</h3>
+                        <p>A woman who leads a double life as a deadly assassin and a mother. She agreed to a marriage of convenience to maintain appearances. Despite her tough exterior, she cared deeply for her family.</p>
+                    </article>
+                    <article class="card">
+                        <img src="anya.jpg" alt="Anya Forger">
+                        <h3>Anya Forger</h3>
+                        <p>A young girl with the power to read minds was adopted into a family. She used her ability to understand her new family’s secrets. Though playful, she has a deep love for her new parents.</p>
+                    </article>
+                    <article class="card">
+                        <img src="bond.jpg" alt="Bond">
+                        <h3>Bond</h3>
+                        <p>A dog with the ability to see the future joined the family. His visions often helped protect his loved ones. He formed a strong bond with his new family.</p>
+                    </article>                                                            
+                </div>
             </main>
         </div>
-        <footer>&copy; Alphea Podador 2025</footer>
+        <footer>
+            &copy; Alphea Podador 2025
+        </footer>
     </div>
 </body>
 </html>
