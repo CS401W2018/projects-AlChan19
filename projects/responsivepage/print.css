@@ -22,7 +22,7 @@ header {
 }
 
 nav {
-    display: none;
+    display: none
 }
 
 .container {
@@ -76,4 +76,11 @@ main h2 {
 .card img {
     width: 100%;
     border-radius: 10px;
+}
+
+footer {
+    background-color: #add8e6;
+    color: black;
+    text-align: center;
+    padding: 20px;
 }
