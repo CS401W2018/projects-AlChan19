@@ -13,10 +13,9 @@ body {
 
 header {
     background-color: #ffb6c1;
-    color: white;
+    color: black;
     text-align: center;
     padding: 15px;
-    text-shadow: 2px 2px 7px black;
     font-size: 3rem;
     font-weight: bold;
 }
