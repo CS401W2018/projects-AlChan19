@@ -101,7 +101,12 @@ footer {
     padding: 20px;
 }
 
-@media only screen and (max-width: 700px) and (min-width: 500px) {
+@media ONLY screen AND (max-width: 700px) AND (min-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container {
         flex-direction: column;
     }
@@ -117,6 +122,7 @@ footer {
 
     .card {
         width: 100%;
+        margin: 10px auto;
     }
 
     aside {
