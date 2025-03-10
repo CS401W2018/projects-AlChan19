@@ -135,16 +135,35 @@ footer {
     }
 
     .profile-cards {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
         width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        
     }
 
     .card {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        max-width: 200px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .card img {
         width: 100%;
     }
 
     footer {
         width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
 
