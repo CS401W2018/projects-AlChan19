@@ -112,6 +112,10 @@ footer {
         text-align: center;
     }
 
+    nav a {
+        margin: 5px 0;
+    }
+
     #wrapper {
         width: 100%;
     }
