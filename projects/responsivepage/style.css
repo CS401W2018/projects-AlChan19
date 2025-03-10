@@ -110,10 +110,11 @@ footer {
         width: 100%;
         flex-direction: column;
         text-align: center;
+        display: flex;
     }
 
     nav a {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     #wrapper {
@@ -122,6 +123,7 @@ footer {
 
     .container {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     main {
@@ -136,17 +138,15 @@ footer {
 
     .profile-cards {
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        gap: 15px;
     }
 
     .card {
-        width: 100%;
+        width: auto;
     }
 
     footer {
         width: 100%;
     }
 }
-
-
 
