@@ -24,8 +24,7 @@ nav {
 }
 
 .container {
-    display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 aside {
