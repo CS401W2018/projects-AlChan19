@@ -41,7 +41,8 @@ nav a:hover {
 }
 
 .container {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 aside {
