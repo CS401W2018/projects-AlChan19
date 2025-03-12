@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <h1>Tables</h1>
+        <table class="schedule">
+            <caption>Course Schedule</caption>
+            <thead>
+                <tr class="titles">
+                    <td>Department</td>
+                    <td>Number</td>
+                    <td>Time</td>
+                    <td>Location</td>
+                    <td>Credits</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5" class="titles">Winter 2025</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>11:00-11:50 AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>12:00-12:50 PM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>210</td>
+                    <td>2:00-2:50 PM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" class="titles">Spring 2025</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>320</td>
+                    <td>3:00-3:50 PM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th id="total-credits" colspan="4">Total Credits</th>
+                    <td headers="total-credits">15</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; Alphea Podador 2025</p>
+    </footer>
+</body>
+</html>
