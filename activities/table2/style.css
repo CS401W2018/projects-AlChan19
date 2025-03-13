@@ -39,3 +39,7 @@ caption {
 .schedule tfoot {
     background-color: rgb(255, 167, 167);
 }
+
+#totalcredits {
+    background-color: rgb(182, 250, 255);
+}
