@@ -54,6 +54,15 @@ figure img {
 }
 
 figcaption {
+    font-weight: bold;      
+    text-align: center;
+    padding-top: 10px;
+}
+
+.band-members {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #555;
     text-align: center;
 }
 
