@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            <div class="form-row">
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="firstname" required="required" placeholder="Ex. John Doe">
+            </div>
+            <div class="form-row">
+                <label for="email">Email: </label>
+                <input type="text" name="email" value="12345@gmail.com" id="email">
+            </div>
+            <div class="form-row">
+                <label for="pass">Password: </label>
+                <input type="password" name="password" id="pass">
+            </div>
+            <div class="form-row">
+                <label for="state">State: </label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div>Year in School</div>
+                <label><input type="radio" name="year" value="Freshman"> Freshman</label>
+                <label><input type="radio" name="year" value="Sophomore"> Sophomore</label>
+                <label><input type="radio" name="year" value="Junior"> Junior</label>
+                <label><input type="radio" name="year" value="Senior"> Senior</label>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+        <h3>Engagement - Form</h3>
+    </main>
+    <footer>
+        <p>&copy; Alphea Podador 2025</p>
+    </footer>
+</body>
+</html>
