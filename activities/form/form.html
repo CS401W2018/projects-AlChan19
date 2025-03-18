@@ -14,20 +14,20 @@
         <form action="processing.html" method="post">
             <div class="form-row">
                 <label for="fullname">Full Name: </label>
-                <input type="text" name="firstname" required="required" placeholder="Ex. John Doe">
+                <input type="text" id="fullname" name="firstname" required="required" placeholder="Ex. John Doe">
             </div>
             <div class="form-row">
                 <label for="email">Email: </label>
-                <input type="text" name="email" value="12345@gmail.com" id="email">
+                <input type="email" id="email" name="email" value="12345@gmail.com">
             </div>
             <div class="form-row">
                 <label for="pass">Password: </label>
-                <input type="password" name="password" id="pass">
+                <input type="password" id="pass" name="password">
             </div>
             <div class="form-row">
                 <label for="state">State: </label>
                 <select name="state" id="state">
-                    <option value="blank"></option>
+                    <option value="" disabled selected>Select a state</option>
                     <option value="NJ">New Jersey</option>
                     <option value="HI">Hawaii</option>
                     <option value="UT">Utah</option>
@@ -55,7 +55,6 @@
               </ul>
             </li>
           </ol>
-          
     </main>
     <footer>
         <p>&copy; Alphea Podador 2025</p>
