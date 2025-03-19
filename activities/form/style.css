@@ -29,12 +29,14 @@ legend {
 }
 
 .form-row {
+    color: black;
     display: flex;
     gap: 10px;
     margin: 10px 0;
 }
 
 .radio-row {
+    color: black;
     display: flex;
     gap: 10px;
     margin: 10px 0;
