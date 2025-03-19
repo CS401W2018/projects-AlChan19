@@ -5,3 +5,38 @@ body {
 main {
     background-color: aquamarine;
 }
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
+@media ONLY screen and (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+    .form-spacer {
+        text-align: left;
+    }
+}

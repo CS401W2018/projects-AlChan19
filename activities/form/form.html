@@ -11,40 +11,51 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
-            <div class="form-row">
-                <label for="fullname">Full Name: </label>
-                <input type="text" id="fullname" name="firstname" required="required" placeholder="Ex. John Doe">
-            </div>
-            <div class="form-row">
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" value="12345@gmail.com">
-            </div>
-            <div class="form-row">
-                <label for="pass">Password: </label>
-                <input type="password" id="pass" name="password">
-            </div>
-            <div class="form-row">
-                <label for="state">State: </label>
-                <select name="state" id="state">
-                    <option value="" disabled selected>Select a state</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <div>Year in School</div>
-                <label><input type="radio" name="year" value="Freshman"> Freshman</label>
-                <label><input type="radio" name="year" value="Sophomore"> Sophomore</label>
-                <label><input type="radio" name="year" value="Junior"> Junior</label>
-                <label><input type="radio" name="year" value="Senior"> Senior</label>
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Account Information</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="firstname" required="required" placeholder="Ex. John Doe">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="required" value="12345@gmail.com">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" required="required" placeholder="Ex. 12345678">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" required="required">
+                        <option value="" disabled selected>Select a state</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="Freshman" checked> Freshman</label>
+                    <label><input type="radio" name="year" value="Sophomore" checked> Sophomore</label>
+                    <label><input type="radio" name="year" value="Junior" checked> Junior</label>
+                    <label><input type="radio" name="year" value="Senior" checked> Senior</label>
+                </div>
+                <div class="radio-row">
+                    <label><input type="checkbox" name="agree" id="agree" required="required" checked>Remember me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit" required="required">
+                </div>
+            </fieldset>
         </form>
-        <h3>Engagement - Form</h3>
+        <h3>Engagement - Form Styling</h3>
         <ol>
             <li>The "action" attribute in the form tag specifies the URL where the form data will be sent when the form is submitted.</li>
             <li>The "method" attribute in the form tag specifies how the form data will be sent to the server (either using "GET" or "POST").</li>
