@@ -16,7 +16,7 @@
                 <legend>Sign Up for the Arcane Society</legend>
                 <div class="form">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="firstname" required="required" placeholder="Ex. Caitlyn Kiramman">
+                    <input type="text" id="fullname" name="firstname" required="required" value="Caitlyn Kiramman">
                 </div>
 
                 <div class="form">
@@ -44,21 +44,34 @@
                     <input type="date" id="dob" name="dob" required="required">
                 </div>
             
-                <div class="radio">
-                    <label>Choose your faction:</label>
-                    <div>
+                <div class="form">
+                    <label for="bio">Tell us about yourself:</label>
+                    <textarea id="bio" name="bio" rows="3" placeholder="Write a short bio..."></textarea>
+                </div>
+                
+                <div class="form">
+                    <label>Faction:</label>
+                    <div class="radio">
                         <input type="radio" id="piltover" name="city">
                         <label for="piltover">Piltover</label>
-                    </div>
-                    <div>
                         <input type="radio" id="zaun" name="city">
                         <label for="zaun">Zaun</label>
                     </div>
                 </div>
-                
+                    
+                <div class="form">
+                    <label for="class">Class:</label>
+                    <select id="class" name="class" required="required">
+                        <option value="" disabled selected>Select a class</option>
+                        <option value="chemist">Chemist</option>
+                        <option value="enforcer">Enforcer</option>
+                        <option value="inventor">Inventor</option>
+                    </select>
+                </div>
+
                 <div class="checkbox">
                     <input type="checkbox" id="agree">
-                    <label for="agree">I agree to the terms</label>
+                    <label for="agree">I agree to the Terms and Conditions</label>
                 </div>
             
                 <div class="form">
