@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT';
     background: #e6e4f1;
     color: #3a3a55; 
     margin: 0;
@@ -7,6 +7,7 @@ body {
 }
 
 header {
+    font-family: 'Times New Roman', Times, serif;
     background: #c5b3e6;
     text-align: center;
     padding: 20px;
@@ -127,13 +128,12 @@ button:hover {
 }
 
 footer {
+    background: #333; 
+    color: #f2f2f2;
+    font-family: 'Courier New', 'monospace';
+    font-size: 14px;
     text-align: center;
-    font-weight: bold;
     padding: 10px;
-    background: #c5b3e6;
-    color: #2b2346;
-    position: flex;
-    box-sizing: border-box;
 }
 
 @media ONLY screen and (max-width: 600px) {
