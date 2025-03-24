@@ -93,16 +93,17 @@
                 alert("Form Submitted");
 
                 const fullname = document.getElementById('fullname').value;
-                console.log(fullname);
-
                 const email = document.getElementById('email').value;
-                console.log(email);
-
                 const pass = document.getElementById('pass').value;
-                console.log(pass);
-
                 const agree = document.getElementById('agree').value;
-                console.log(agree);
+
+                const formData = {
+                    fullname: fullname,
+                    email: email,
+                    password: pass
+                };
+
+                console.log(formData)
             });
         </script>
         <p>&copy; Alphea Podador 2025</p>
