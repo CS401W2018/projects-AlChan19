@@ -11,7 +11,7 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="form">
             <fieldset>
                 <legend>Account Information</legend>
                 <div class="form-row">
@@ -56,30 +56,55 @@
             </fieldset>
         </form>
         <div class="answers">
-            <h3>Engagement - Form Styling</h3>
+            <h3>Engagement - Form Processing with JavaScript</h3>
             <ol>
                 <li>
-                    <strong>What are different ways to style your form?</strong>
+                    <strong>What is JavaScript? How did it get its name?</strong>
                     <ul>
-                        <li>You can use CSS to change colors, fonts, and spacing.</li>
-                        <li>Use padding and margins to make the form look neat.</li>
-                        <li>Change input box sizes to match the design.</li>
-                        <li>Use borders and background colors to highlight sections.</li>
+                        <li>It is a popular programming language. It was created by the inventors of Netscape</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Why does the professor like to use flex?</strong>
+                    <strong>What are the two ways you can run JavaScript?</strong>
                     <ul>
-                        <li>Flex makes it easy to align form elements.</li>
-                        <li>It helps position inputs, labels, and buttons neatly.</li>
-                        <li>It works well on different screen sizes.</li>
-                        <li>It makes forms look more organized with less code.</li>
+                        <li>JavaScript is running in our browser. In the Document-Object-Model</li>
+                        <li>node.js(Express.js)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>What was the most popular front-end js library?</strong>
+                    <ul>
+                        <li>abc</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>What is the most popular front-end js library today?</strong>
+                    <ul>
+                        <li>abc</li>
                     </ul>
                 </li>
             </ol>
         </div>
     </main>
     <footer>
+        <script>
+            document.getElementById('form').addEventListener('submit',function(event){
+                event.preventDefault();
+                alert("Form Submitted");
+
+                const fullname = document.getElementById('fullname').value;
+                console.log(fullname);
+
+                const email = document.getElementById('email').value;
+                console.log(email);
+
+                const pass = document.getElementById('pass').value;
+                console.log(pass);
+
+                const agree = document.getElementById('agree').value;
+                console.log(agree);
+            });
+        </script>
         <p>&copy; Alphea Podador 2025</p>
     </footer>
 </body>
