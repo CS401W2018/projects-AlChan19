@@ -97,6 +97,11 @@
                 const pass = document.getElementById('pass').value;
                 const agree = document.getElementById('agree').value;
 
+                if (!fullname) {
+                    alert("You need to enter your name.");
+                    return;
+                }
+
                 const formData = {
                     fullname: fullname,
                     email: email,
