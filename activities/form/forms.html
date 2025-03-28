@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="get" id="form">
+            <fieldset>
+                <legend>Account Information</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="firstname" required="required" placeholder="Ex. John Doe">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="required" value="12345@gmail.com">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" required="required" placeholder="Ex. 12345678">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" required="required">
+                        <option value="" disabled selected>Select a state</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="Freshman" checked> Freshman</label>
+                    <label><input type="radio" name="year" value="Sophomore" checked> Sophomore</label>
+                    <label><input type="radio" name="year" value="Junior" checked> Junior</label>
+                    <label><input type="radio" name="year" value="Senior" checked> Senior</label>
+                </div>
+                <div class="form-row">
+                    <label><input type="checkbox" name="agree" id="agree" required="required" checked>Remember me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+        <div class="answers">
+            <h3>Engagement - Form Processing with AJAX</h3>
+            <ol>
+                <li>
+                    <strong>What is JavaScript? How did it get its name?</strong>
+                    <ul>
+                        <li>JavaScript is a programming language used to make web pages interactive.</li>
+                        <li>It was created by Netscape in 1995 and originally called <em>Mocha</em> and <em>LiveScript</em>. It was renamed <em>JavaScript</em> to benefit from Java’s popularity though they are not related.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>What are the two ways you can run JavaScript?</strong>
+                    <ul>
+                        <li>In a browser: Updates web pages dynamically.</li>
+                        <li>On a server: Runs backend apps with Node.js.</li>
+                    </ul>                    
+                </li>
+                <li>
+                    <strong>What was the most popular front-end JavaScript library?</strong>
+                    <ul>
+                        <li>jQuery: Used to simplify DOM manipulation and fix browser issues.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>What is the most popular front-end JavaScript library today?</strong>
+                    <ul>
+                        <li>React: A powerful library for building user interfaces with reusable components.</li>
+                    </ul>
+                </li>
+            </ol>            
+        </div>
+    </main>
+    <footer>
+        <script>
+            document.getElementById('form').addEventListener('submit', function(event){
+                event.preventDefault();
+                const fullname = document.getElementById('fullname').value;
+                const email = document.getElementById('email').value;
+                const pass = document.getElementById('pass').value;
+                const agree = document.getElementById('agree').value;
+
+                
+
+
+                const formData = {
+                    firstName: firstName,
+                    lastName: lastName,
+                    password: document.getElementById('password').value,
+                    remember: document.getElementById('remember').checked,
+                    state: document.getElementById('state').value,
+                    class: document.query.querySelector('input[name="class"]:checked') ? document.querySelector('input[name="class"]:checked').value : null
+                };
+
+                console.log(formData);
+                const xhr = new XMLLHttpRequest();
+                xhr.open("GET", "submit.json", true);
+                xhr.setRequestHeader("Consennt-Type", "application/json;charset+UTF-8");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        alert('Form submitted succesfully.');
+                    } else if (xhr.readyState === 4) {
+                        alert('Error submitting form.');
+                    }
+                };
+                xhr.send(JSON.stringify(formData));
+            };
+
+                // if (!age || age < 18) {
+                //     alert("You need to be 18.");
+                //     return;
+                // }
+
+            //     const formData = {
+            //         fullname: fullname,
+            //         email: email,
+            //         password: pass
+            //     };
+
+            //     console.log(formData)
+            // });
+        </script>
+        <p>&copy; Alphea Podador 2025</p>
+    </footer>
+</body>
+</html>
