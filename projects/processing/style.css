@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #ff4d4d; 
+    background-color: #F37199; 
     color: white;
     padding: 25px;
     text-align: center;
@@ -55,7 +55,7 @@ input, select, textarea {
 }
 
 input[type="submit"] {
-    background-color: #ff4d4d;
+    background-color: #F37199;
     color: white;
     padding: 20px;
     font-size: 16px;
@@ -64,7 +64,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e60000;
+    background-color: #E53888;
 }
 
 footer {
