@@ -2,3 +2,8 @@ body {
     min-height: 75rem;
     padding-top: 4.5rem;
 }
+
+main {
+    padding-left: 200px;
+    padding-top: 50px;
+}
