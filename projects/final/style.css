@@ -219,6 +219,8 @@ main {
     line-height: 1.6;
     color: #3c3a4e;
     margin-bottom: 20px;
+    margin: 50px;
+  justify-items: center;
 }
 
 /* REFERENCES */
