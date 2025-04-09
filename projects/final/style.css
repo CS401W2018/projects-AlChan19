@@ -28,11 +28,10 @@ header {
   animation: wave 2s ease-in-out infinite;
   paint-order: stroke fill;
 
-  /* Text outline using text-shadow */
   text-shadow:
-    3.5px 0 #ff7a00,   /* right */
-    3.5px -3.5px #ff7a00, /* top-right */
-   -3.5px 3.5px #3a1f00;  /* outer-bottom left */
+    3.5px 0 #ff7a00, 
+    3px -3px #ff7a00, 
+   -3px 3px #3a1f00; 
 }
 
 
@@ -209,8 +208,8 @@ main {
   background-color: #fff8e1;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 100%; /* Ensure the table is responsive */
-  max-width: 1200px; /* Max width for larger screens */
+  width: 100%; 
+  max-width: 1200px; 
   justify-self: center;
 }
 
