@@ -20,20 +20,17 @@ header {
 }
 
 .title {
-  color: #fff6e5;
-  font-size: calc(1rem + min(90px, 15vw));
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  animation: wave 2s ease-in-out infinite;
-  paint-order: stroke fill;
-
   text-shadow:
     3.5px 0 #ff7a00, 
     3px -3px #ff7a00, 
    -3px 3px #3a1f00; 
+  color: #fff6e5;
+  text-transform: uppercase;
+  font-size: calc(1rem + min(90px, 15vw));
+  font-weight: 900;
+  margin: 0;
+  animation: wave 2s ease-in-out infinite;
 }
-
 
 .sub-title {
   font-size: 1.5rem;
