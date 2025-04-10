@@ -315,24 +315,20 @@ main {
 
 .discussion-list {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .discussion-list li {
   list-style-type: '🐾 ';
-  margin: 10px;
 }
 
-.discussion-list li a {
+.discussion-list a {
   text-decoration: none;
   color: #ff7a00;
-  font-weight: bold;
 }
 
-.discussion-list li a:hover {
+.discussion-list a:hover {
   text-decoration: underline;
-  color: #ff4500;
 }
 
 .hawaii-humane-link {
@@ -352,29 +348,34 @@ main {
 }
 
 /* REFERENCES */
-
 .references-title {
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff7a00;
+  margin-bottom: 10px;
+}
+
+.references-video-title {
   font-weight: bold;
   color: #e65100;
   margin-bottom: 10px;
 }
 
-.references-list {
+.references {
   list-style-type: none;
   padding: 0;
 }
 
-.references-list li {
+.references li {
   margin-bottom: 8px;
 }
 
-.references-list a {
+.references a {
   text-decoration: none;
   color: #ff7a00;
 }
 
-.references-list a:hover {
+.references a:hover {
   text-decoration: underline;
 }
 
@@ -484,8 +485,6 @@ form button:hover {
 
 /* MOBILE */
 @media ONLY screen AND (max-width: 700px) {
-
-
   .title {
     font-size: 55px;
   }
@@ -553,6 +552,7 @@ form button:hover {
     font-size: 1rem;
   }
 
+  /* CONTACT FORM */
   .contact-form-container {
     padding: 20px;
   }
