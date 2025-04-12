@@ -22,27 +22,27 @@ document.addEventListener('DOMContentLoaded', function () {
     phone = `(${phone.slice(0, 3)}) ${phone.slice(3, 6)}-${phone.slice(6)}`;
 
     const formData = {
-      name: name,
-      email: email,
-      phone: phone,
-      message: message,
-      interests: interests
+      name,
+      email,
+      phone,
+      message,
+      interests
     };
 
     console.log("Submitting Form Data:", formData);
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "response.json", true); 
-    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.open("GET", "response.json", true);
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           const response = JSON.parse(xhr.responseText);
+          document.getElementById('successMsg').textContent = response.message || "Form submitted successfully!";
           document.getElementById('successMsg').style.display = 'block';
           document.getElementById('contactForm').reset();
 
-          document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(function (field) {
+          document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(field => {
             field.disabled = true;
           });
         } else {
@@ -51,6 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     };
 
-    xhr.send(JSON.stringify(formData));
+    xhr.send(); 
   });
 });
