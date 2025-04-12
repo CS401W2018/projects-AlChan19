@@ -211,7 +211,7 @@ main {
 }
 
 .cat-table h2 {
-  color: #cc7722;
+  color: #e65100;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -262,7 +262,7 @@ main {
 /* DID YOU KNOW */
 .did-you-know {
   background-color: #fffbea;
-  border-left: 6px solid #f4a261;
+  border-left: 6px solid #e76f51;
   padding: 20px;
   margin: 30px auto;
   max-width: 750px;
@@ -271,7 +271,7 @@ main {
 }
 
 .did-you-know h2 {
-  color: #e76f51;
+  color: #e65100;
   font-size: 1.8rem;
   margin-bottom: 15px;
   font-weight: bold;
@@ -311,6 +311,10 @@ main {
   color: #3c3a4e;
   margin: 30px;
   justify-items: center;
+}
+
+.discussion-text li {
+  list-style-type: '🐱 ';
 }
 
 .discussion-list {
