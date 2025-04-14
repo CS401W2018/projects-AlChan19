@@ -383,6 +383,11 @@ main {
   text-decoration: underline;
 }
 
+.vid-ref {
+  color: #ff7a00;
+  margin-top: 5px;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
