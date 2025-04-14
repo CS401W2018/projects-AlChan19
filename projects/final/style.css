@@ -388,18 +388,6 @@ main {
   margin-top: 5px;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #ffa500;
-  color: #1a1a1a;
-  border-radius: 5px;
-  margin-top: auto;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
 /* CONTACT FORM */
 .contact-form-container {
   max-width: 800px;
@@ -490,6 +478,18 @@ form button:hover {
   margin-top: 20px;
   text-align: center;
   font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffa500;
+  color: #1a1a1a;
+  border-radius: 5px;
+  margin-top: auto;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /* MOBILE */
