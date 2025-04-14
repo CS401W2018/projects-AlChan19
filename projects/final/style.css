@@ -535,21 +535,36 @@ footer {
 
   /* CAT TABLE */
   .cat-table {
-    margin: 20px 10px; 
-    padding: 10px; 
+    margin: 20px 10px;
+    padding: 10px;
   }
 
   .cat-table h2 {
-    font-size: 1.2rem; 
-  }
-
-  .cat-table th, .cat-table td {
-    padding: 8px; 
-    font-size: 0.9rem; 
+    font-size: 1.2rem;
   }
 
   .cat-table caption {
-    font-size: 1rem; 
+    font-size: 1rem;
+  }
+
+  .cat-table table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cat-table thead,
+  .cat-table tbody {
+    display: table;
+    width: 100%;
+  }
+
+  .cat-table th,
+  .cat-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   /* DICUSSION */
